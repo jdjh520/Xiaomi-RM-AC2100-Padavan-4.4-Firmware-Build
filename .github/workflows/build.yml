@@ -15,6 +15,7 @@ env:
   work_dir: /opt/padavan/trunk
   firmware_dir: /opt/firmware
   config_file: config
+  #custom_script: custom.sh
 
 jobs:
   build:
@@ -54,10 +55,10 @@ jobs:
       run: |
         cp $config_file $work_dir/configs/templates/${{ matrix.device }}.config
         mv $config_file $work_dir/.config
-        mv $custom_script $work_dir/
-        cd $work_dir
-        chmod +x build_firmware_modify && chmod +x $custom_script
-        ./$custom_script
+        #mv $custom_script $work_dir/
+        #cd $work_dir
+        #chmod +x build_firmware_modify && chmod +x $custom_script
+        #./$custom_script
 
     - name: Compile the firmware
       if: (!cancelled())
