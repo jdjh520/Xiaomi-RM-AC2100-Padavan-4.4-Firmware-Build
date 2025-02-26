@@ -10,12 +10,12 @@ on:
     types: [started]
 
 env:
-  src_git: https://github.com/MeIsReallyBa/padavan-4.4.git
+  src_git: https://github.com/jdjh520/padavan-4.4.0.git
   src_dir: /opt/padavan
   work_dir: /opt/padavan/trunk
   firmware_dir: /opt/firmware
   config_file: config
-  custom_script: custom.sh
+#  custom_script: custom.sh
 
 jobs:
   build:
