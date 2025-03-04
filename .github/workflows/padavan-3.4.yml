@@ -14,7 +14,7 @@ env:
   src_dir: /opt/padavan
   work_dir: /opt/padavan/trunk
   firmware_dir: /opt/firmware
-  config_file: config
+  config_file: .config
   #custom_script: custom.sh
 
 jobs:
