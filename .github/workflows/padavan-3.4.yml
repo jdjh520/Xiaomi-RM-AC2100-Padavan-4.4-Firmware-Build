@@ -1,4 +1,4 @@
-name: Build-padavan3.4-firmware
+name: Build-padavan-firmware
 
 on:
   workflow_dispatch:
